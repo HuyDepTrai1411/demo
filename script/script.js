@@ -35,4 +35,3 @@ function pauseSlide() {
 document.querySelectorAll('.button_left, .button_right').forEach(function(element) {
   element.addEventListener('click', pauseSlide);
 });
-
