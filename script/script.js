@@ -36,3 +36,12 @@ document.querySelectorAll('.button_left, .button_right').forEach(function(elemen
   element.addEventListener('click', pauseSlide);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var links = document.getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (link.href && link.href.indexOf("reviews.html") !== -1) {
+          link.href = "topanime.html";
+      }
+  }
+});
